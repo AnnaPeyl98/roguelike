@@ -1,0 +1,8 @@
+//
+// Created by anna on 25.06.19.
+//
+
+#ifndef MYGAME_PLAYERCONTROLER_H
+#define MYGAME_PLAYERCONTROLER_H
+
+#endif //MYGAME_PLAYERCONTROLER_H
