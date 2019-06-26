@@ -14,7 +14,7 @@ set(PROJECT_SOURCES_DIR ${PROJECT_SOURCE_DIR}/src)
 FILE(GLOB_RECURSE HEADERS ${PROJECT_HEADERS_DIR}/*.h)
 FILE(GLOB_RECURSE SOURCES ${PROJECT_SOURCES_DIR}/*.cpp)
 
-add_executable(mygame ${HEADERS} ${SOURCES} include/Map.h src/Map.cpp include/Controls.h src/Controls.cpp include/Player.h src/Player.cpp include/Level.h src/Level.cpp main.cpp)
+add_executable(mygame ${HEADERS} ${SOURCES} include/Map.h src/Map.cpp include/Controls.h src/Controls.cpp include/Player.h src/Player.cpp include/Level.h src/Level.cpp main.cpp include/PlayerControler.h src/PlayerControler.cpp include/Game.h)
 
 target_link_libraries(${PROJECT_NAME} ${BLT_LIBRARIES})
 

@@ -9,6 +9,8 @@
 
 class Level{
     Player& player;
+    Map &map;
     void Update();
+
 };
 #endif //MYGAME_LEVEL_H

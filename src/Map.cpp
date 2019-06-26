@@ -2,14 +2,12 @@
 // Created by anna on 25.06.19.
 //
 
-
+#include <iostream>
 #include "../include/Map.h"
-
+using namespace std;
 Map::Map(const char *name){
         getMap(name);
     }
-
-
     void Map::getMap(const char *name) {
         char ch;
         char buf[5];
@@ -35,6 +33,11 @@ Map::Map(const char *name){
                 j++;
             }
 
+        }
+        for(int i=0;i<width;i++){
+            for(int j=0;j<length;j++)
+                cout<<arr[i][j];
+            cout<<" "<<endl;
         }
 
     }

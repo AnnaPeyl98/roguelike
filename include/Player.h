@@ -11,8 +11,8 @@
 class Player{
     const Controls &controls;
     Map &map;
-    bool enemy =false;
 public:
+
     int x_;
     int y_;
     int money_;
@@ -28,13 +28,26 @@ public:
     void SetMoney(int money);
     void SetSteps(int steps);
     void SetHealth(int health);
+    void SetMap(Map &map);
     int GetX();
     int GetY();
     int GetMoney();
     int GetSteps();
     int GetHealth();
-    Player(const Controls &controls, int x, int money, int steps, int health, int y, Map &map);
+    Player(int x, int money, int steps, int health, int y, Map &map, const Controls &controls);
     void Update();
+    Player& operator=(const Player& player) {
+        //проверка на самоприсваивание
+        if (this == &player) {
+            return *this;
+        }
+        x_=player.x_;
+        y_=player.y_;
+        money_=player.money_;
+        steps_=player.steps_;
+        health_=player.health_;
 
+        return *this;
+    }
 };
 #endif //MYGAME_PLAYER_H
