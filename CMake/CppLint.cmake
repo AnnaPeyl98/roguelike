@@ -51,7 +51,7 @@ function(add_style_check_target TARGET_NAME PROJECT_HEADERS_DIR PROJECT_SOURCES_
         COMMAND "${CMAKE_COMMAND}" -E chdir
         "${CMAKE_CURRENT_SOURCE_DIR}"
         /usr/bin/python
-        "${CMAKE_SOURCE_DIR}/misc/cpplint/cpplint.py"
+        "/home/anna/.local/bin/cpplint"
         "--filter=${STYLE_FILTER}"
         "--counting=detailed"
         "--linelength=120"
